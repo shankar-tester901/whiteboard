@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Share Ideas</title>
+    <meta name="description" content="Draw">
+    <meta name="author" content="Tomomi Imura  @girlie_mac">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" type="text/javascript"></script>
+
+</head>
+
+<body onLoad="init(0)">
+    <img crossorigin="anonymous"></img>
+    <header>
+        <div>
+
+            <a href='#' id="cleanScreen">Clean</a>
+            <a href='#' id="newBoard">New Board</a>
+
+
+        </div>
+        <div class="bubble">
+            <span id="occupancy">0</span>
+            <span id="unit">Users</span>
+            <span id="statusIs"></span>
+        </div>
+    </header>
+
+
+    <div id="notes">
+
+    </div>
+
+
+    <section id="main">
+        <!-- <canvas id="drawCanvas" width="300" height="500">Canvas is not supported on this browser!</canvas> -->
+
+        <section id="colorSwatch">
+            <input type="radio" name="color" id="color01" data-color="gold" checked><label for="color01"></label>
+            <input type="radio" name="color" id="color02" data-color="darkorange"> <label for="color02"></label>
+            <input type="radio" name="color" id="color03" data-color="navy"> <label for="color03"></label>
+            <input type="radio" name="color" id="color04" data-color="yellowgreen"> <label for="color04"></label>
+            <input type="radio" name="color" id="color05" data-color="firebrick"> <label for="color05"></label>
+            <input type="radio" name="color" id="color06" data-color="powderblue"> <label for="color06"></label>
+        </section>
+
+        <section id="stickyNote">
+            <div id="postIt">
+                <div class=topBar></div>
+                <div class=form>
+                    <div contenteditable class=textAria>
+                        Drop Me
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="animals">
+            <div id="toolbar">
+                <img class="tool" width=52 height=52 src="images/1.png">
+                <img class="tool" width=52 height=52 src="images/2.png">
+                <img class="tool" width=52 height=52 src="images/3.png">
+                <img class="tool" width=52 height=52 src="images/4.png">
+            </div><br>
+        </section>
+        <section id="fileUpload">
+            <form id="form1">
+                <div>
+                    <input type="file" id="imageinput" />
+                </div>
+            </form>
+        </section>
+
+
+    </section>
+
+
+
+
+    <script>
+        // For history() demo, please view history.html.
+        var drawHistory = false;
+    </script>
+
+    <!-- <script src="//cdn.pubnub.com/pubnub-3.14.1.min.js"></script> -->
+    <script src="https://cdn.pubnub.com/sdk/javascript/pubnub.4.27.6.min.js"></script>
+
+    <script src="js/app.min.js"></script>
+
+
+</body>
+
+</html>

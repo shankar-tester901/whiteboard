@@ -1,0 +1,12 @@
+{
+  "client": {
+    "source": "client"
+  },
+  "applogic": {
+    "targets": [
+      "tester_whiteboard"
+    ],
+    "ignore": [],
+    "source": "applogic"
+  }
+}
